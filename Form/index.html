@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+</head>
+<body>
+  <h1>Feedback Form</h1>
+  <form>
+    <label for="feedbackType">Feedback Type:</label>
+    <select id="feedbackType" name="feedbackType">
+      <option value="general">General</option>
+      <option value="positive">Positive</option>
+      <option value="negative">Negative</option>
+    </select><br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea><br><br>
+
+    <label for="rating">Website Rating:</label><br>
+    <input type="radio" id="rating1" name="rating" value="1">
+    <label for="rating1">1</label>
+    <input type="radio" id="rating2" name="rating" value="2">
+    <label for="rating2">2</label>
+    <input type="radio" id="rating3" name="rating" value="3">
+    <label for="rating3">3</label>
+    <input type="radio" id="rating4" name="rating" value="4">
+    <label for="rating4">4</label>
+    <input type="radio" id="rating5" name="rating" value="5">
+    <label for="rating5">5</label><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="10" max="100"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" pattern=".{8,}" title="Must be at least 8 characters long" required><br><br>
+
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website"><br><br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions.</label><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
